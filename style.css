@@ -435,6 +435,34 @@ img {
     flex-wrap: wrap;
 }
 
+.hero-social {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 2rem;
+    align-items: center;
+}
+
+.hero-social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-text-light);
+    transition: var(--transition);
+    font-weight: 400;
+}
+
+.hero-social-link svg {
+    transition: var(--transition);
+}
+
+.hero-social-link:hover {
+    color: var(--color-heading);
+}
+
 .hero-stats {
     display: flex;
     gap: 4rem;
