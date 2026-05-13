@@ -204,4 +204,87 @@ document.addEventListener('DOMContentLoaded', () => {
             closeModal();
         }
     });
+
+    // 6. Reviews Carousel (mobile only)
+    (function() {
+        const reviewsGrid = document.getElementById('reviews-slider');
+        const dotsContainer = document.getElementById('slider-dots');
+        const sliderPrev = document.querySelector('.slider-prev');
+        const sliderNext = document.querySelector('.slider-next');
+        const sliderControls = document.querySelector('.slider-controls');
+
+        if (!reviewsGrid || !sliderControls) return;
+
+        const cards = reviewsGrid.querySelectorAll('.review-card');
+        const total = cards.length;
+        let current = 0;
+
+        function isMobile() {
+            return window.innerWidth <= 768;
+        }
+
+        // Pokaż / ukryj kontrolki
+        function toggleControls() {
+            sliderControls.style.display = isMobile() ? 'flex' : 'none';
+        }
+
+        // Generuj kropki
+        if (dotsContainer) {
+            cards.forEach((_, i) => {
+                const dot = document.createElement('button');
+                dot.className = 'slider-dot' + (i === 0 ? ' active' : '');
+                dot.setAttribute('aria-label', 'Opinia ' + (i + 1));
+                dot.addEventListener('click', () => goTo(i));
+                dotsContainer.appendChild(dot);
+            });
+        }
+
+        function updateDots() {
+            if (!dotsContainer) return;
+            dotsContainer.querySelectorAll('.slider-dot').forEach((dot, i) => {
+                dot.classList.toggle('active', i === current);
+            });
+        }
+
+        function updateArrows() {
+            if (sliderPrev) sliderPrev.disabled = current === 0;
+            if (sliderNext) sliderNext.disabled = current === total - 1;
+        }
+
+        function goTo(index) {
+            if (!isMobile()) return;
+            current = Math.max(0, Math.min(index, total - 1));
+            const width = reviewsGrid.parentElement.offsetWidth;
+            reviewsGrid.style.transform = 'translateX(-' + (current * width) + 'px)';
+            updateDots();
+            updateArrows();
+        }
+
+        if (sliderPrev) sliderPrev.addEventListener('click', () => goTo(current - 1));
+        if (sliderNext) sliderNext.addEventListener('click', () => goTo(current + 1));
+
+        // Swipe / dotyk
+        let touchStartX = 0;
+        reviewsGrid.addEventListener('touchstart', e => {
+            touchStartX = e.touches[0].clientX;
+        }, { passive: true });
+        reviewsGrid.addEventListener('touchend', e => {
+            const diff = touchStartX - e.changedTouches[0].clientX;
+            if (Math.abs(diff) > 50) goTo(diff > 0 ? current + 1 : current - 1);
+        }, { passive: true });
+
+        // Reset przy resize (przejście desktop ↔ mobile)
+        window.addEventListener('resize', () => {
+            toggleControls();
+            if (!isMobile()) {
+                reviewsGrid.style.transform = '';
+                current = 0;
+            } else {
+                goTo(current);
+            }
+        });
+
+        toggleControls();
+        updateArrows();
+    })();
 });

@@ -163,7 +163,8 @@
                 <p>Opinie inwestorów prywatnych, którzy zaufali nam przy wykończeniu swoich domów.</p>
             </div>
 
-            <div class="reviews-grid" style="grid-template-columns: repeat(3, 1fr);">
+            <div class="reviews-slider-wrapper">
+            <div class="reviews-grid" id="reviews-slider" style="grid-template-columns: repeat(3, 1fr);">
 
                 <!-- Kacper Perzankowski -->
                 <div class="review-card">
@@ -273,7 +274,15 @@
                     </div>
                 </div>
 
+            </div><!-- /reviews-grid -->
+
+            <div class="slider-controls">
+                <button class="slider-arrow slider-prev" aria-label="Poprzednia opinia">&#8592;</button>
+                <div class="slider-dots" id="slider-dots"></div>
+                <button class="slider-arrow slider-next" aria-label="Następna opinia">&#8594;</button>
             </div>
+
+            </div><!-- /reviews-slider-wrapper -->
         </div>
     </section>
 
