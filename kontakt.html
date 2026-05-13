@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="pl-PL" >
+<html lang="pl-PL">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kontakt - PLUS Izolacje</title>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900|Source+Sans+Pro:100,200,300,400,500,600,700,800,900|Poppins:100,200,300,400,500,600,700,800,900|Inter:100,200,300,400,500,600,700,800,900" >
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900|Source+Sans+Pro:100,200,300,400,500,600,700,800,900|Poppins:100,200,300,400,500,600,700,800,900|Inter:100,200,300,400,500,600,700,800,900">
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Firma Tynkarska "Diament" Łowicz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -18,76 +19,84 @@
         <a class="modal-nav modal-next">&#10095;</a>
     </div>
 
-    <!-- Nawigacja -->
-    <nav class="navbar" id="navbar">
+    <!-- Navbar -->
+    <header class="navbar">
         <div class="container nav-container">
             <a href="./index.html" class="logo">
-                <img src="https://plusizolacje.pl/wp-content/uploads/2024/05/logo3.png" alt="PLUS Izolacje">
+                <img src="./images/logo.png" alt='Firma Tynkarska "Diament"'>
+                <div class="logo-brand">
+                    <span class="logo-brand-top">Firma Tynkarska</span>
+                    <span class="logo-brand-bottom">Diament</span>
+                </div>
             </a>
-            
-            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
+            <button class="mobile-menu-btn" aria-label="Otwórz menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </button>
-
-            <ul class="nav-links" id="nav-links">
-                <li><a href="./index.html">Strona Główna</a></li>
-                <li class="dropdown">
-                    <a href="./wylewki.html">Wylewki z agregatu</a>
+            <nav class="nav-links">
+                <a href="./index.html">Strona Główna</a>
+                <div class="dropdown">
+                    <a href="./tynki.html">Tynki Maszynowe</a>
                     <div class="dropdown-menu">
-                        <a href="./wylewki.html#betonowe">Wylewki maszynowe (betonowe)</a>
-                        <a href="./wylewki.html#styrobeton">Wylewki styrobetonowe</a>
-                        <a href="./wylewki.html#realizacje">Nasze realizacje - Wylewki</a>
+                        <a href="./tynki.html#tynk-gipsowo-wapienny">Tynk gipsowo-wapienny</a>
+                        <a href="./tynki.html#tynk-gipsowy-twardy">Tynk gipsowy twardy</a>
+                        <a href="./tynki.html#tynk-gipsowy-lekki">Tynk gipsowy lekki</a>
+                        <a href="./tynki.html#tynk-cementowo-wapienny">Tynk cementowo-wapienny</a>
                     </div>
-                </li>
-                <li class="dropdown">
-                    <a href="./piana-pur.html">Ocieplenia pianą PUR</a>
-                    <div class="dropdown-menu">
-                        <a href="./piana-pur.html#otwartokomorkowa">Pianka otwartokomórkowa</a>
-                        <a href="./piana-pur.html#zamknietokomorkowa">Pianka zamkniętokomórkowa</a>
-                        <a href="./piana-pur.html#realizacje">Nasze realizacje - Ocieplenia</a>
-                    </div>
-                </li>
-                <li><a href="./kontakt.html" class="btn btn-primary" style="color: white !important;">Kontakt</a></li>
-            </ul>
+                </div>
+                <a href="./o-nas.html">O nas</a>
+                <a href="./kontakt.html" style="color: var(--color-primary); font-weight: 500;">Kontakt</a>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    <!-- Header -->
+    <!-- Page Header -->
     <header class="page-header">
         <div class="container animate-on-scroll">
             <h1>Kontakt z nami</h1>
-            <p style="font-size: 1.25rem; color: var(--color-text-main); font-weight: 300;">Porozmawiajmy o wycenie Twojego najbliższego projektu na żywo.</p>
+            <p style="font-size: 1.25rem; color: var(--color-text-main); font-weight: 300;">Porozmawiajmy o wycenie Twojego projektu na żywo.</p>
         </div>
     </header>
 
     <section class="section-padding">
         <div class="container animate-on-scroll">
-            
             <div class="calculator-wrapper" style="margin-top: 0; padding-top: 2rem;">
-                
+
                 <!-- Dane kontaktowe -->
                 <div class="calculator-text">
                     <h2 class="section-title" style="font-size: 2.5rem; margin-bottom: 2rem;">Czekamy<br>na Twój <span>telefon</span>.</h2>
-                    <p>Skontaktuj się z naszym inżynierem ds. realizacji. Opowiemy Ci o terminach, zaproponujemy wolne sloty z kalendarza i doradzimy najlepszy możliwy materiał.</p>
-                    
+                    <p>Zadzwoń lub napisz — doradzimy najlepsze rozwiązanie, umówimy termin i przedstawimy wycenę.</p>
+
                     <div style="margin-top: 3rem;">
                         <span style="display: block; font-size: 0.875rem; color: var(--color-text-light); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.5rem;">Zadzwoń bezpośrednio:</span>
-                        <!-- PRZYCISK TELEFONU Z HREF TEL -->
-                        <a href="tel:+48531402222" class="btn btn-primary" style="font-size: 1.2rem; font-weight: 600; padding: 1.25rem 3rem; margin-bottom: 2rem; width: 100%; text-align: center;">&#9990; (+48) 531 402 222</a>
+                        <a href="tel:+48730679727" class="btn btn-primary" style="font-size: 1.2rem; font-weight: 600; padding: 1.25rem 3rem; margin-bottom: 2rem; width: 100%; text-align: center;">&#9990; (+48) 730 679 727</a>
                     </div>
 
                     <div style="margin-top: 2rem;">
                         <span style="display: block; font-size: 0.875rem; color: var(--color-text-light); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.5rem;">Bezpośredni Adres E-mail:</span>
-                        <a href="mailto:biuro@plusizolacje.pl" style="font-size: 1.5rem; font-weight: 400; color: var(--color-heading); font-family: var(--font-heading); text-decoration: underline;">biuro@plusizolacje.pl</a>
+                        <a href="mailto:firmatynkarskadiament@my.com" style="font-size: 1.1rem; font-weight: 400; color: var(--color-heading); font-family: var(--font-heading); text-decoration: underline;">firmatynkarskadiament@my.com</a>
+                    </div>
+
+                    <div style="margin-top: 2rem;">
+                        <span style="display: block; font-size: 0.875rem; color: var(--color-text-light); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.5rem;">Adres:</span>
+                        <address style="font-style: normal; color: var(--color-heading);">Firma Tynkarska "Diament"<br>Łowicz, 99-400</address>
+                    </div>
+
+                    <div style="margin-top: 2rem; display: flex; gap: 0.75rem;">
+                        <a href="https://www.facebook.com/Diament-firma-tynkarska" target="_blank" class="footer-social-fb" aria-label="Facebook Diament">
+                            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+                        </a>
+                        <a href="https://www.instagram.com/firma.tynkarska.diament" target="_blank" class="footer-social-fb" aria-label="Instagram Diament">
+                            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
                     </div>
                 </div>
-                
-                <!-- Formularz Mailowy -->
+
+                <!-- Formularz -->
                 <div class="calculator-form">
                     <h3 style="font-size: 1.5rem; margin-bottom: 2rem; font-weight: 400;">Napisz do nas wiadomość</h3>
-                    <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Wiadomość z formularza testowego wysłana (to tylko makieta wizualna formy).');">
+                    <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Wiadomość wysłana. Odezwiemy się wkrótce!');">
                         <div class="form-group">
                             <label for="name">Imię i Nazwisko</label>
                             <input type="text" id="name" class="form-control" placeholder="Wpisz swoje dane" required>
@@ -98,14 +107,13 @@
                         </div>
                         <div class="form-group">
                             <label for="message">Treść Wiadomości</label>
-                            <textarea id="message" class="form-control" rows="5" placeholder="Jakiej usługi potrzebujesz?" style="resize: vertical; font-family: var(--font-body); padding: 1rem;" required></textarea>
+                            <textarea id="message" class="form-control" rows="5" placeholder="Jakiej usługi potrzebujesz? Podaj metraż i lokalizację." style="resize: vertical; font-family: var(--font-body); padding: 1rem;" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-outline" style="width: 100%; padding: 1rem;">Wyślij wiadomość</button>
                     </form>
                 </div>
 
-             </div>
-
+            </div>
         </div>
     </section>
 
@@ -113,41 +121,43 @@
     <footer id="kontakt-footer" class="footer">
         <div class="container footer-grid animate-on-scroll">
             <div class="footer-brand">
-                <img src="https://plusizolacje.pl/wp-content/uploads/2024/05/logo3.png" alt="PLUS Izolacje Logo" class="footer-logo">
-                <p>Specjalizujemy się w wykonywaniu wylewek betonowych oraz w ocieplaniu budynków Pianą PUR.</p>
+                <img src="./images/logo.png" alt='Firma Tynkarska "Diament"' class="footer-logo">
+                <p>Specjalizujemy się w tynkach maszynowych wewnętrznych w regionie łowickim.</p>
             </div>
-            
             <div class="footer-links">
                 <h4>Szybkie Linki</h4>
                 <ul>
                     <li><a href="./index.html">Strona Główna</a></li>
-                    <li><a href="./wylewki.html">Wylewki Agregatem</a></li>
-                    <li><a href="./piana-pur.html">Ocieplenia Pianą PUR</a></li>
-                    <li><a href="./o-nas.html">O Firmie</a></li>
+                    <li><a href="./tynki.html">Tynki Maszynowe</a></li>
+                    <li><a href="./o-nas.html">O nas</a></li>
+                    <li><a href="./kontakt.html">Kontakt</a></li>
                 </ul>
             </div>
-            
             <div class="footer-contact">
                 <h4>Dane Kontaktowe</h4>
                 <ul>
                     <li>
                         <span style="font-size: 0.85rem; color: #9CA3AF;">Telefon</span>
-                        <a href="tel:+48531402222" style="font-weight: 500; color: #111827;">(+48) 531 402 222</a>
+                        <a href="tel:+48730679727" style="font-weight: 500; color: #111827;">(+48) 730 679 727</a>
                     </li>
                     <li style="margin-top: 1rem;">
                         <span style="font-size: 0.85rem; color: #9CA3AF;">Email</span>
-                        <a href="mailto:biuro@plusizolacje.pl" style="font-weight: 500; color: #111827;">biuro@plusizolacje.pl</a>
+                        <a href="mailto:firmatynkarskadiament@my.com" style="font-weight: 500; color: #111827;">firmatynkarskadiament@my.com</a>
                     </li>
                 </ul>
-                <a href="https://www.facebook.com" target="_blank" class="footer-social-fb" aria-label="Facebook">
-                    f
-                </a>
+                <div style="display: flex; gap: 0.75rem; margin-top: 1.5rem;">
+                    <a href="https://www.facebook.com/Diament-firma-tynkarska" target="_blank" class="footer-social-fb" aria-label="Facebook Diament">
+                        <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+                    </a>
+                    <a href="https://www.instagram.com/firma.tynkarska.diament" target="_blank" class="footer-social-fb" aria-label="Instagram Diament">
+                        <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                    </a>
+                </div>
             </div>
         </div>
-        
         <div class="container">
             <div class="footer-bottom">
-                &copy; 2026 PLUS Izolacje. Wszelkie prawa zastrzeżone.
+                &copy; 2026 Firma Tynkarska "Diament". Wszelkie prawa zastrzeżone.
             </div>
         </div>
     </footer>

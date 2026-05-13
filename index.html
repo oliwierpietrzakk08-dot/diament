@@ -3,21 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PLUS Izolacje - Lider technologii izolacyjnych i wylewek</title>
-    <!-- Fonts -->
+    <title>Firma Tynkarska "Diament" | Tynki Maszynowe Łowicz</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
-    <!-- Header / Navbar -->
+    <!-- Navbar -->
     <header class="navbar">
         <div class="container nav-container">
             <a href="./index.html" class="logo">
-                <img src="https://plusizolacje.pl/wp-content/uploads/2024/05/logo.jpg" alt="Twój Wymiar - Stolarstwo Premium">
+                <img src="./images/logo.png" alt='Firma Tynkarska "Diament"'>
+                <div class="logo-brand">
+                    <span class="logo-brand-top">Firma Tynkarska</span>
+                    <span class="logo-brand-bottom">Diament</span>
+                </div>
             </a>
             <button class="mobile-menu-btn" aria-label="Otwórz menu">
                 <span class="bar"></span>
@@ -27,247 +29,291 @@
             <nav class="nav-links">
                 <a href="./index.html" style="color: var(--color-primary); font-weight: 500;">Strona Główna</a>
                 <div class="dropdown">
-                    <a href="./wylewki.html">Wylewki z agregatu</a>
+                    <a href="./tynki.html">Tynki Maszynowe</a>
                     <div class="dropdown-menu">
-                        <a href="./wylewki.html#wylewki-betonowe">Wylewki betonowe</a>
-                        <a href="./wylewki.html#wylewki-styrobetonowe">Wylewki styrobetonowe</a>
-                        <a href="./wylewki.html#nasze-realizacje">Nasze realizacje - Wylewki</a>
+                        <a href="./tynki.html#tynk-gipsowo-wapienny">Tynk gipsowo-wapienny</a>
+                        <a href="./tynki.html#tynk-gipsowy-twardy">Tynk gipsowy twardy</a>
+                        <a href="./tynki.html#tynk-gipsowy-lekki">Tynk gipsowy lekki</a>
+                        <a href="./tynki.html#tynk-cementowo-wapienny">Tynk cementowo-wapienny</a>
                     </div>
                 </div>
-                <div class="dropdown">
-                    <a href="./piana-pur.html">Ocieplenia pianą PUR</a>
-                    <div class="dropdown-menu">
-                        <a href="./piana-pur.html#zastosowanie">Zastosowanie pianek poliuretanowych</a>
-                        <a href="./piana-pur.html#pianka-zamknietokomorkowa">Pianka zamkniętokomórkowa</a>
-                        <a href="./piana-pur.html#pianka-otwartokomorkowa">Pianka otwartokomórkowa</a>
-                        <a href="./piana-pur.html#nasze-realizacje">Nasze realizacje - Ocieplenia</a>
-                    </div>
-                </div>
+                <a href="./o-nas.html">O nas</a>
                 <a href="./kontakt.html">Kontakt</a>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section class="hero animate-on-scroll">
         <div class="container hero-content">
             <div class="hero-text">
-                <span class="badge">PLUS Piotr Lus</span>
-                <h1>Kompleksowa obsługa od <span>pomiarów</span> po szybką realizację.</h1>
-                <p>Cechuje Nas dokładność, profesjonalizm oraz terminowość. Dzięki wielu latom doświadczeń jesteśmy firmą o stabilnej pozycji na rynku, której zaufało już wielu inwestorów prywatnych oraz przedsiębiorstw.</p>
+                <span class="badge">Firma Tynkarska "Diament"</span>
+                <h1>Tynki maszynowe wykonane <span>dokładnie</span> i na czas.</h1>
+                <p>Profesjonalne tynki wewnętrzne dla domów prywatnych w Łowiczu i okolicach.</p>
                 <div class="hero-buttons">
-                    <a href="tel:+48531402222" class="btn btn-primary" style="background-color: var(--color-heading); border-color: var(--color-heading); color: white;">&#9990; Zadzwoń teraz</a>
-                    <a href="#uslugi" class="btn btn-primary">Sprawdź specjalizacje</a>
+                    <a href="tel:+48730679727" class="btn btn-primary" style="background-color: var(--color-heading); border-color: var(--color-heading); color: white;">&#9990; Zadzwoń teraz</a>
+                    <a href="./tynki.html" class="btn btn-primary">Sprawdź specjalizacje</a>
                     <a href="#wycena" class="btn btn-outline">Kalkulator wycen</a>
                 </div>
             </div>
             <div class="hero-stats">
                 <div class="stat-box">
-                    <h3>300<span>+</span></h3>
-                    <p>Inwestycji Rocznie</p>
+                    <h3>100<span>%</span></h3>
+                    <p>Zaangażowania</p>
                 </div>
                 <div class="stat-box">
                     <h3>100<span>%</span></h3>
-                    <p>Zaangażowania w pomiar</p>
+                    <p>Zadowolonych klientów</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Nasze Specjalizacje -->
+    <!-- Usługi -->
     <section id="uslugi" class="services section-padding bg-light">
         <div class="container animate-on-scroll">
             <div class="section-header text-center">
                 <span class="section-subtitle">Obszary Ekspertyzy</span>
                 <h2 class="section-title">Nasze specjalizacje</h2>
-                <p style="max-width: 600px; margin: 0 auto;">Nasza firma specjalizuje się w wykonywaniu wylewek betonowych oraz w ocieplaniu budynków Pianą PUR. Poznaj nasze dwa filary działalności:</p>
+                <p style="max-width: 600px; margin: 0 auto;">Specjalizujemy się wyłącznie w tynkach maszynowych wewnętrznych — wykonywanych agregatem tynkarskim na prywatnych domach.</p>
             </div>
-            <!-- Grid -->
-            <div class="services-grid" style="max-width: 1000px; margin-left: auto; margin-right: auto;">
-                <!-- Service 1 -->
-                <a href="./wylewki.html" class="service-card animate-on-scroll">
-                    <img src="./images/wylewki/1.jpg" alt="Beton z mixokreta" class="service-img">
+            <div class="services-grid" style="max-width: 600px; margin-left: auto; margin-right: auto;">
+                <a href="./tynki.html" class="service-card animate-on-scroll">
+                    <img src="./images/tynki/1.jpg" alt="Tynki maszynowe wewnętrzne" class="service-img">
                     <div class="service-content">
-                        <h3>Wylewki maszynowe z agregatu</h3>
-                        <p>Zastosowanie technologii mixokreta zapewnia gładkość ułożenia warstwy oraz drastycznie wyższą odporność na pękanie posadzki. Jest to kluczowe, szczególnie przed położeniem ogrzewania podłogowego.</p>
-                        <span class="service-link">Otwórz stronę wylewek</span>
-                    </div>
-                </a>
-                <!-- Service 2 -->
-                <a href="./piana-pur.html" class="service-card animate-on-scroll">
-                    <img src="./images/ocieplenia/1.jpg" alt="Natrysk piany PUR poddasza" class="service-img"> 
-                    <div class="service-content">
-                        <h3>Ocieplenia Pianą Poliuretanową</h3>
-                        <p>Niezwykle precyzyjne ocieplanie (na poddasza oraz stropy sztywne pianą otwartokomórkową) i izolacja fundamentów, hal oraz wiat pianą twardą - zamkniętokomórkową.</p>
-                        <span class="service-link">Otwórz stronę izolacji</span>
+                        <h3>Tynki maszynowe wewnętrzne</h3>
+                        <p>Wykonujemy tynki: gipsowo-wapienne, gipsowe twarde, gipsowe lekkie oraz cementowo-wapienne. Technologia maszynowa gwarantuje równą, gładką powierzchnię.</p>
+                        <span class="service-link">Dowiedz się więcej</span>
                     </div>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- O Nas Section -->
+    <!-- O Nas -->
     <section id="o-nas" class="about section-padding">
         <div class="container about-container animate-on-scroll">
             <div class="about-image">
-                <img src="https://plusizolacje.pl/wp-content/uploads/2024/05/logo3.png" alt="Logo firmy PLUS" style="max-width: 70%; margin: 0 auto; display: block; filter: none; opacity: 1;">
+                <img src="./images/onas.png" alt='Ekipa Firmy Tynkarskiej "Diament"' style="max-width: 100%; margin: 0 auto; display: block; object-fit: cover; aspect-ratio: 4/3;">
             </div>
             <div class="about-text">
-                <span class="section-subtitle">O Firmie PLUS</span>
-                <h2 class="section-title">Wieloletnie zaplecze rynkowe</h2>
-                <p>Jesteśmy zespołem wyspecjalizowanych ekspertów, którzy od lat zajmują się termoizolacją i wyrównywaniem powierzchni docelowych. Nasza infrastruktura nie tylko obejmuje proces wylewkowy, ale także zaopatrzenie w bezpośrednio sprawdzony przez inżynierów towar.</p>
+                <span class="section-subtitle">Firma Tynkarska "Diament"</span>
+                <h2 class="section-title">Ekipa tynkarzy z Łowicza</h2>
+                <p>Jesteśmy ekipą tynkarzy z Łowicza specjalizującą się w tynkach maszynowych wewnętrznych na prywatnych domach.</p>
                 <div class="highlight-quote">
-                    "Zbudowaliśmy pozycję firmy o stabilnej podstawie, stając się domyślnym wyborem dla setek inwestorów rocznie poszukujących sprawnej ekipy wykonawczej."
+                    "Kiedy inwestor jest zadowolony, nasze serce się raduje."
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Wycena / Kalkulator Section -->
+    <!-- Kalkulator -->
     <section id="wycena" class="calculator section-padding bg-light">
         <div class="container animate-on-scroll">
             <div class="section-header text-center" style="margin-bottom: 4rem;">
                 <span class="section-subtitle">Oszacuj Koszty</span>
                 <h2 class="section-title">Szybka Wycena Interaktywna</h2>
             </div>
-            
+
             <div class="calculator-wrapper">
                 <div class="calculator-text">
-                    <p>Nasz kalkulator to proste narzędzie, które błyskawicznie weryfikuje koszty robocizny materiałowej. Wybierz parametr usługowy obok i zdefiniuj swój metraż. Jeśli chcesz pójść krok dalej, zapraszamy do kontaktu dla wiążącej wyceny dokumentacyjnej.</p>
+                    <p>Nasz kalkulator to proste narzędzie, które błyskawicznie weryfikuje orientacyjne koszty robocizny. Wybierz rodzaj tynku i określ swój metraż. Zapraszamy do kontaktu w celu uzyskania wiążącej wyceny po oględzinach.</p>
                 </div>
-                
+
                 <div class="calculator-form">
                     <div class="form-group">
-                        <label for="service-type">Metoda<span>Wybierz Opcję</span></label>
+                        <label for="service-type">Rodzaj tynku <span>Wybierz Opcję</span></label>
                         <select id="service-type" class="form-control">
-                            <option value="piana_pur_otwarta">Ocieplenie pianą otwartokomórkową (dachy)</option>
-                            <option value="piana_pur">Izolacja pianą zamkniętokomórkową (fundament)</option>
-                            <option value="wylewka">Wylewki maszynowe (betonowe zacierane)</option>
+                            <option value="tynk_gipsowo_wapienny">Tynk gipsowo-wapienny</option>
+                            <option value="tynk_gipsowy_twardy">Tynk gipsowy twardy</option>
+                            <option value="tynk_gipsowy_lekki">Tynk gipsowy lekki</option>
+                            <option value="tynk_cementowo_wapienny">Tynk cementowo-wapienny</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="thickness-size">Grubość Warstwy <span><span id="thickness-val" style="font-weight: 600;">25</span> cm</span></label>
-                        <input type="range" id="thickness-size" min="10" max="30" value="25" step="1" class="range-slider">
-                    </div>
-                    <div class="form-group">
                         <label for="area-size">Metraż Projektu <span><span id="area-val" style="font-weight: 600;">150</span> m²</span></label>
-                        <input type="range" id="area-size" min="50" max="1000" value="150" step="10" class="range-slider">
+                        <input type="range" id="area-size" min="20" max="500" value="150" step="5" class="range-slider">
                     </div>
                     <div class="calculator-result">
-                        <span class="result-label">Szacunkowy budżet do zaplanowania:</span>
+                        <span class="result-label">Szacunkowy koszt robocizny:</span>
                         <span class="result-value" id="calc-result"></span>
                     </div>
-                    <p class="calc-note">Związana ze zmiennymi rynkowymi kalkulacja powykonawcza ulegnie doszlifowaniu w indywidualnych warunkach. Skontaktuj się w celu ostatecznego dopasowania estymaty.</p>
+                    <p class="calc-note">Kalkulacja orientacyjna. Ostateczna wycena ustalana jest indywidualnie po oględzinach. Skontaktuj się z nami po szczegółową estymację.</p>
                 </div>
-             </div>
+            </div>
         </div>
     </section>
 
-    <!-- Google Opinions Section -->
+    <!-- Opinie -->
     <section id="opinie" class="opinions section-padding">
         <div class="container animate-on-scroll">
             <div class="section-header text-center">
                 <span class="section-subtitle">Potwierdzenie Jakości</span>
                 <h2 class="section-title">Co mówią o nas Klienci</h2>
-                <p>Niezależne recenzje wystawione przez dziesiątki inżynierów, menadżerów placu oraz inwestorów indywidualnych na bazie współpracy deweloperskiej i remontowej.</p>
+                <p>Opinie inwestorów prywatnych, którzy zaufali nam przy wykończeniu swoich domów.</p>
             </div>
 
-            <div class="reviews-grid">
-                <!-- Review 1 -->
+            <div class="reviews-grid" style="grid-template-columns: repeat(3, 1fr);">
+
+                <!-- Kacper Perzankowski -->
                 <div class="review-card">
                     <div class="review-header">
-                        <div class="reviewer-avatar">M</div>
+                        <div class="reviewer-avatar" style="background: #1a73e8;">K</div>
                         <div class="reviewer-info">
-                            <h4>Mateusz K.</h4>
-                            <div class="stars">★★★★★</div>
+                            <h4>Kacper Perzankowski</h4>
+                            <span class="reviewer-meta">Lokalny przewodnik · 42 opinie</span>
+                            <div class="review-rating">
+                                <div class="stars">★★★★★</div>
+                                <span class="review-time">rok temu</span>
+                            </div>
                         </div>
                     </div>
-                    <p class="review-text">"Doskonała współpraca od momentu pomiarów do finału. Pianka na poddaszu otwartokomórkowa zaaplikowana bezbłędnie. Zrobili w jeden dzień to, co innej ekipie wg planu zeszłoby trzy dni."</p>
+                    <p class="review-text">„Wykonaliśmy tynki gipsowo-wapienne w całym domu oraz cementowo-wapienne w łazienkach. Wszystko wykonane fachowo i estetycznie. Powierzchnia ścian gładka. Piony, kąty zachowane. Stolarka okienna ładnie zabezpieczona. Chudziak na koniec wysprzątany. Jednym słowem — polecam :)"</p>
                     <div class="google-logo">
-                        <span style="font-weight: 500; font-family: Arial; font-size: 14px;">Google Reviews</span>
+                        <span style="font-weight: 500; font-family: Arial; font-size: 13px; color: #5F6368;">Google Reviews</span>
                     </div>
                 </div>
 
-                <!-- Review 2 -->
+                <!-- Daria Gałązkiewicz -->
                 <div class="review-card">
                     <div class="review-header">
-                        <div class="reviewer-avatar">T</div>
+                        <div class="reviewer-avatar" style="background: #5f6368;">D</div>
                         <div class="reviewer-info">
-                            <h4>Tomasz R.</h4>
-                            <div class="stars">★★★★★</div>
+                            <h4>Daria Gałązkiewicz</h4>
+                            <span class="reviewer-meta">4 opinie</span>
+                            <div class="review-rating">
+                                <div class="stars">★★★★★</div>
+                                <span class="review-time">3 lata temu</span>
+                            </div>
                         </div>
                     </div>
-                    <p class="review-text">"Zamówiłem wylewkę mixokretem podłogową pod system rur na parterze. Jakość na 5 z plusem z racji dbałości o czystość krawędzi. Lasery weryfikacyjne i zacieranie naprawdę godne zaufania. Chłopaki wiedzą co robią."</p>
+                    <p class="review-text">„Z czystym sumieniem polecam firmę tynkarską Diament. Tynki w naszym domu zostały wykonane bardzo profesjonalnie i dokładnie."</p>
+                    <div class="review-tags">
+                        <span class="review-tag">Czas reakcji</span>
+                        <span class="review-tag">Punktualność</span>
+                        <span class="review-tag">Jakość</span>
+                        <span class="review-tag">Profesjonalizm</span>
+                        <span class="review-tag">Stosunek jakości do ceny</span>
+                    </div>
                     <div class="google-logo">
-                        <span style="font-weight: 500; font-family: Arial; font-size: 14px;">Google Reviews</span>
+                        <span style="font-weight: 500; font-family: Arial; font-size: 13px; color: #5F6368;">Google Reviews</span>
                     </div>
                 </div>
 
-                <!-- Review 3 -->
+                <!-- Marta -->
                 <div class="review-card">
                     <div class="review-header">
-                        <div class="reviewer-avatar" style="background:var(--color-black)">P</div>
+                        <div class="reviewer-avatar" style="background: #7b1ea2;">M</div>
                         <div class="reviewer-info">
-                            <h4>Piotr Zaremba</h4>
-                            <div class="stars">★★★★★</div>
+                            <h4>Marta</h4>
+                            <span class="reviewer-meta">Lokalny przewodnik · 18 opinii</span>
+                            <div class="review-rating">
+                                <div class="stars">★★★★★</div>
+                                <span class="review-time">rok temu</span>
+                            </div>
                         </div>
                     </div>
-                    <p class="review-text">"Najwyższy poziom fachowości przy dociepleniu ścian nośnych i stropu sztywnego pianą zamkniętokomórkową chlewni. Uczciwe ceny za bardzo, bardzo dobrą profesjonalną robotę."</p>
+                    <p class="review-text">„Polecam wszystkim współpracę z tą firmą. Solidni, terminowi, bezproblemowy kontakt."</p>
                     <div class="google-logo">
-                        <span style="font-weight: 500; font-family: Arial; font-size: 14px;">Google Reviews</span>
+                        <span style="font-weight: 500; font-family: Arial; font-size: 13px; color: #5F6368;">Google Reviews</span>
                     </div>
                 </div>
+
+                <!-- Agn G -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-avatar" style="background: #00897b;">A</div>
+                        <div class="reviewer-info">
+                            <h4>Agn G</h4>
+                            <span class="reviewer-meta">3 opinie</span>
+                            <div class="review-rating">
+                                <div class="stars">★★★★★</div>
+                                <span class="review-time">2 lata temu</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">„Firma rzetelna, godna polecenia. Jakość na najwyższym poziomie. Polecam!"</p>
+                    <div class="review-tags">
+                        <span class="review-tag">Czas reakcji</span>
+                        <span class="review-tag">Jakość</span>
+                        <span class="review-tag">Profesjonalizm</span>
+                        <span class="review-tag">Stosunek jakości do ceny</span>
+                    </div>
+                    <div class="google-logo">
+                        <span style="font-weight: 500; font-family: Arial; font-size: 13px; color: #5F6368;">Google Reviews</span>
+                    </div>
+                </div>
+
+                <!-- AnimaVilis -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-avatar" style="background: #388e3c;">A</div>
+                        <div class="reviewer-info">
+                            <h4>AnimaVilis</h4>
+                            <span class="reviewer-meta">3 opinie</span>
+                            <div class="review-rating">
+                                <div class="stars">★★★★★</div>
+                                <span class="review-time">rok temu</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">„Polecam!!"</p>
+                    <div class="google-logo">
+                        <span style="font-weight: 500; font-family: Arial; font-size: 13px; color: #5F6368;">Google Reviews</span>
+                    </div>
+                </div>
+
             </div>
-            
         </div>
     </section>
 
-
+    <!-- Footer -->
     <footer id="kontakt" class="footer">
         <div class="container footer-grid animate-on-scroll">
             <div class="footer-brand">
-                <img src="https://plusizolacje.pl/wp-content/uploads/2024/05/logo3.png" alt="PLUS Izolacje Logo (Stolarstwo Premium)" class="footer-logo">
-                <p>Specjalizujemy się w wykonywaniu wylewek betonowych oraz w ocieplaniu budynków Pianą PUR.</p>
+                <img src="./images/logo.png" alt='Firma Tynkarska "Diament"' class="footer-logo">
+                <p>Specjalizujemy się w tynkach maszynowych wewnętrznych w regionie łowickim.</p>
             </div>
-            
+
             <div class="footer-links">
                 <h4>Szybkie Linki</h4>
                 <ul>
                     <li><a href="./index.html">Strona Główna</a></li>
-                    <li><a href="./wylewki.html">Wylewki Agregatem</a></li>
-                    <li><a href="./piana-pur.html">Ocieplanie Pianą PUR</a></li>
+                    <li><a href="./tynki.html">Tynki Maszynowe</a></li>
+                    <li><a href="./o-nas.html">O nas</a></li>
+                    <li><a href="./kontakt.html">Kontakt</a></li>
                 </ul>
             </div>
 
             <div class="footer-contact">
                 <h4>Kontakt Bezpośredni</h4>
                 <ul>
+                    <li><a href="tel:+48730679727">(+48) 730 679 727</a></li>
+                    <li><a href="mailto:firmatynkarskadiament@my.com">firmatynkarskadiament@my.com</a></li>
                     <li>
-                        <a href="tel:+48531402222">(+48) 531 402 222</a>
+                        <address>Firma Tynkarska "Diament"<br>Łowicz, 99-400</address>
                     </li>
                     <li>
-                        <a href="mailto:kontakt@plusizolacje.pl">kontakt@plusizolacje.pl</a>
-                    </li>
-                    <li>
-                        <address>PLUS Piotr Lus<br>ul. Popów 85<br>99-400 Łowicz</address>
-                    </li>
-                    <li>
-                        <a href="#" class="footer-social-fb" aria-label="Facebook Twój Wymiar">
-                            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
-                        </a>
+                        <div style="display: flex; gap: 0.75rem; margin-top: 0.5rem;">
+                            <a href="https://www.facebook.com/Diament-firma-tynkarska" target="_blank" class="footer-social-fb" aria-label="Facebook Diament">
+                                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+                            </a>
+                            <a href="https://www.instagram.com/firma.tynkarska.diament" target="_blank" class="footer-social-fb" aria-label="Instagram Diament">
+                                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                            </a>
+                        </div>
                     </li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
             <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
-                <p>&copy; 2026 Twój Wymiar - Stolarstwo Premium | PLUS Izolacje Piotr Lus.</p>
+                <p>&copy; 2026 Firma Tynkarska "Diament".</p>
                 <p>Realizacja: Minimalist Design</p>
             </div>
         </div>
     </footer>
 
-    <!-- JS -->
     <script src="./script.js"></script>
 </body>
 </html>
